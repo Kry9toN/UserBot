@@ -138,6 +138,11 @@
       "description": "Your client_secret.json.",
       "required": false
     },
+   "DEEZER_ARL_TOKEN": {
+      "description": "Fill of your Deezer ARL token. Get from https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken",
+      "required": false,
+      "value": ""
+    },
     "GENIUS_ACCESS_TOKEN": {
       "description": "Client Access Token from https://genius.com/api-clients.",
       "required": false
