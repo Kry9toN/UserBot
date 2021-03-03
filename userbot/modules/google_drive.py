@@ -462,7 +462,7 @@ async def download_gdrive(gdrive, service, uri):
                         f"`ETA` -> {time_formatter(eta)}"
                     )
                     if round(
-                      diff % 15.00) == 0 and (display_message
+                      diff % 5.00) == 0 and (display_message
                                               != current_message) or (
                       downloaded == file_size):
                         await gdrive.edit(current_message)
@@ -510,7 +510,7 @@ async def download_gdrive(gdrive, service, uri):
                         f"`ETA` -> {time_formatter(eta)}"
                     )
                     if round(
-                      diff % 15.00) == 0 and (display_message
+                      diff % 5.00) == 0 and (display_message
                                               != current_message) or (
                       downloaded == file_size):
                         await gdrive.edit(current_message)
@@ -647,7 +647,7 @@ async def upload(gdrive, service, file_path, file_name, mimeType):
                 f"@ {humanbytes(speed)}`\n"
                 f"`ETA` -> {time_formatter(eta)}"
             )
-            if round(diff % 15.00) == 0 and (
+            if round(diff % 5.00) == 0 and (
               display_message != current_message) or (
               uploaded == file_size):
                 await gdrive.edit(current_message)
